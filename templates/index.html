@@ -1,0 +1,16 @@
+cat <<EOF > templates/index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emotion Detector</title>
+</head>
+<body>
+    <h1>Enter a statement to analyze:</h1>
+    <form action="/emotionDetector" method="POST">
+        <input type="text" name="text_to_analyze" placeholder="I am so happy..." />
+        <button type="submit">Analyze</button>
+    </form>
+    <script src="/static/mywebscript.js"></script>
+</body>
+</html>
+EOF
